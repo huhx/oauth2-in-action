@@ -1,0 +1,19 @@
+server:
+  port: 9090
+
+security:
+  oauth2:
+    client:
+      client-id: client-id
+      client-secret: client-secret
+      access-token-uri: access_url
+      scope: resouce_id/.default
+    resource:
+      id: resouce_id
+      jwk:
+        keySetUri: https://login.microsoftonline.com/common/discovery/keys
+
+logging:
+  level:
+    root: debug
+
